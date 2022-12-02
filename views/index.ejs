@@ -1,5 +1,22 @@
-extends layout
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("partials/head.ejs") %> 
+<body>
+  <main>
+    <%- include("partials/headerHome.ejs") %> 
 
-block content
-  h1= title
-  p Welcome to #{title}
+    <section class="porqueNosotros">
+      <h3 class="porqueNosotrosH3">
+        ¿Porque Mountain Agent?
+      </h3>
+      <div class="porqueNosotrosDiv">
+        <img class="porqueNosotrosImg" src="/images/Icon-Mountain-Agent.png" alt="">
+        <p class="porqueNosotrosText">
+          Te ofrecemos un sitio web totalmente personalizado y con disponibilidad para que todo quede hecho a tu manera, si no te gusta algo lo cambiamos en segundos. USamos las mejores estrategias para que tu sitio web sea totalmente visible y recomendado en los navegadores 
+        </p>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
