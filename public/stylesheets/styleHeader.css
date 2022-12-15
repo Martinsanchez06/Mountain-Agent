@@ -40,6 +40,8 @@ header {
 
 .textHeader {
     color: #fff;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* --- ICONO ANIMADO DEL HEADER --- */
