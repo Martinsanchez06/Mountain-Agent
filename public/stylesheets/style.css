@@ -4,29 +4,40 @@
     font-family: 'Prompt', sans-serif;
 }
 
+body {
+    background-image: url("../images/Frame9.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 main {
-    max-width: 1200px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- WIDTH 1500PX --- */
+
+.porqueNosotros, .empresas, .planes {
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* --- SECCION PORQUE NOSOTROS --- */
 
-
 .porqueNosotrosH3 {
-    margin: 331px 0px 0px 0px;
     text-align: center;
 }
 
 .porqueNosotrosDiv {
-    position: absolute;
-    z-index: 10;
-    top: 552px;
+    margin: 50px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 0px 40px 0px rgb(35, 35, 35);
-    background-color: #0415B5;
+    background: rgb(4, 21, 181);
+    background: linear-gradient(90deg, rgba(4, 21, 181, 1) 47%, rgba(0, 176, 255, 1) 100%);
     display: flex;
     max-width: 1200px;
     justify-content: center;
@@ -53,13 +64,21 @@ main {
 
 /* --- TARJETAS DE PORQUE NOSOTROS --- */
 
+.diseñoPersonalizadoH3,
+.actualizacionesH3,
+.analisisH3,
+.optimizacionH3 {
+    border-bottom: 1px solid #00b0ff;
+}
+
 .diseñoPersonalizado,
 .actualizaciones,
 .optimizacion,
 .analisis {
-    border: 3px solid rgb(206, 206, 206);
+    border: 3px solid #00b0ff;
     border-radius: 20px;
-    margin: 60px 10px 10px 10px;
+    box-shadow: 0px 0px 30px 0px rgb(207, 207, 207);
+    margin: 20px;
     text-align: center;
     min-height: 50%;
     padding: 20px;
@@ -119,10 +138,15 @@ main {
     position: absolute;
 }
 
+.empresas-section {
+    width: 100vw;
+    background-image: url("../images/fondo-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .empresas {
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
     padding: 20px;
     justify-content: space-around;
     display: flex;
@@ -221,4 +245,87 @@ main {
 .sanJR_a {
     color: #6aff00;
     text-decoration: none;
+}
+
+/* --- PLANES --- */
+
+.planes {
+    display: flex;
+    justify-content: space-around;
+
+    box-shadow: 0px 0px 20px 0px rgb(35, 35, 35);
+    border-radius: 20px;
+    background-color: #000;
+    padding: 30px;
+}
+
+.planesH2 {
+    text-align: center;
+}
+
+.planBasico,
+.planMedio,
+.planPro {
+    border: 3px solid #00b0ff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgb(207, 207, 207);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+
+.planBasicoH3,
+.planMedioH3,
+.planProH3 {
+    margin-bottom: 20px;
+    color: #00b0ff;
+    font-size: 25px;
+    border-bottom: 2px solid #00b0ff;
+
+}
+
+/* --- ICONO CHECK --- */
+
+.fa-check {
+    color: #7CFC00;
+}
+
+.fa-x {
+    color: rgb(255, 0, 0);
+}
+
+
+
+/* --- PLAN BASICO --- */
+
+
+.basicoLi,
+.medioLi,
+.proLi {
+    list-style: none;
+}
+
+/* --- PRECIOS --- */
+
+.precioBasico,
+.precioMedio,
+.precioPro {
+    font-size: 20px;
+    margin: 20px;
+    display: block;
+    border-bottom: 2px solid #6aff00;
+}
+
+/* --- MAS VENDIDO --- */
+
+.masVendido {
+    background: rgb(12, 0, 182);
+    color: #fff;
+    border-radius: 20px;
+    padding: 16px 8px;
+    background: linear-gradient(90deg, rgba(12, 0, 182, 1) 0%, rgba(222, 0, 255, 1) 100%);
 }
